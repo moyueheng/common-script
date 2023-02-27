@@ -3,7 +3,11 @@ import os
 import sys
 import time
 
-cmd = 'python /jinx/hehe.py'
+import os
+from os.path import join as pjoin
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+cmd = 'python {}'.format(pjoin(current_dir, 'hehe.py'))
 
 
 def gpu_info():
