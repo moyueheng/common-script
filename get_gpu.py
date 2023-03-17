@@ -7,7 +7,8 @@ import os
 from os.path import join as pjoin
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
-cmd = 'python {}'.format(pjoin(current_dir, 'hehe.py'))
+# cmd = 'python {}'.format(pjoin(current_dir, 'hehe.py'))
+cmd = f'cd {current_dir}\nsh ./hehe.sh'
 
 
 def gpu_info():
